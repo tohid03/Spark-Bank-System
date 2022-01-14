@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymleaf.org">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+<link th:href="@{/css/style.css}" rel="stylesheet"></link>
+<meta charset="ISO-8859-1">
+<title>SBS Home</title>
+</head>
+<body>
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark purple-gradient fixed-top">
+
+    <a href="/" class="navbar-brand">𝐒𝐩𝐚𝐫𝐤 𝐁𝐚𝐧𝐤 𝐒𝐞𝐫𝐯𝐢𝐜𝐞</a>
+           
+            
+        
+
+  <!-- Collapse button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="basicExampleNav">
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a th:href="@{/SBS/customers}" class="nav-item nav-link ">View Customers</a>
+      </li>
+      <li class="nav-item">
+         <a th:href="@{/SBS/SendMoney}" class="nav-item nav-link">Send Money</a>
+      </li>
+      <li class="nav-item">
+        <a th:href="@{/SBS/transactions}" class="nav-item nav-link">View Transections</a>
+      </li>
+      
+     
+
+    </ul>
+</div>
+  <!-- Collapsible content -->
+
+</nav>
+<!--/.Navbar-->
+    <div class="container">
+        <div class="p-5 my-5">
+            <h1 class="text-light">Welcome to Spark Bank Service</h1>
+            <div class="mt-2 g-lg-5 row">
+                <div class="col-sm-4 col-md-4">
+
+                    <div class="card bg-transparent" style="width: 18rem;">
+                        <img th:src="@{/image/img1.png}" height="200px" width="200px" class="card-img-top rounded" alt="Card image cap">
+                        <div class="card-body">
+                            
+
+                            <a th:href="@{/SBS/customers}"   class="btn  btn-light btn-outline-primary">View Customers &raquo;</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-4 col-md-4">
+
+                    <div class="card bg-transparent" style="width: 18rem;">
+                        <img th:src="@{/image/img2.png}" height="200px" width="200px" class="card-img-top rounded" alt="Card image cap">
+                        <div class="card-body">
+                            
+
+                            <a th:href="@{/SBS/SendMoney}"  class="btn  btn-light btn-outline-primary">Send Money &raquo;</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-4 col-md-4">
+
+                    <div class="card bg-transparent" style="width: 18rem;">
+                        <img th:src="@{/image/img3.png}" height="200px" width="200px" class="card-img-top rounded" alt="Card image cap">
+                        <div class="card-body">
+                         
+
+                            <a th:href="@{/SBS/transactions}"  class="btn  btn-light btn-outline-primary">View Transections &raquo;</a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+    </div>
+    <br>
+        <footer>
+            <hr class="text-light">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="text-light">Copyright © 2022 Spark Bank Service</p>
+                </div>
+                <div class="col-md-6 text-md-end ">
+                    <a href="#" class="text-light">Terms of Use</a>
+                    <span class="text-muted mx-2">|</span>
+                    <a href="#" class="text-light">Privacy Policy</a>
+                </div>
+            </div>
+        </footer>
+   
+
+</body>
+
+</html>
